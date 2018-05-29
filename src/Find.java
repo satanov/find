@@ -30,7 +30,7 @@ public class Find {
         }
         if (level != 0 || fileIsFounded) return paths;
         else {
-            paths.add("файл не найден");
+            paths.add("file not found");
             return paths;
         }
     }

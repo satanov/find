@@ -6,13 +6,13 @@ import org.kohsuke.args4j.Option;
 import java.util.List;
 
 public class FindLauncher {
-    @Option(name = "-r", usage = "поиск в поддиректориях")
+    @Option(name = "-r", usage = "search in subdirectories")
     private boolean deepFind;//??
 
-    @Option(name = "-d", required = true, usage = "директория")
+    @Option(name = "-d", required = true, usage = "directory")
     private String directory;
 
-    @Argument(required = true, usage = "имя файла для поиска")
+    @Argument(required = true, usage = "name of the file for search")
     private String filename;
 
     public static void main(String[] args) {
